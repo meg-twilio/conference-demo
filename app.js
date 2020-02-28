@@ -25,17 +25,21 @@ app.post('/voice', (request, response) => {
 
 	const dial = twiml.dial();
 
+	console.log(request)
+
 	if (request.body.From == MODERATOR) {
 		dial.conference('My conference', {
 			startConferenceOnEnter: true,
 			endConferenceOnExit: true,
 		});
+		console.log(response)
 	} else {
 		dial.conference('My conference', {
 			startConferenceOnEnter: false,
 		});
+		console.log(response)
 	};
-
+	
 	response.type('text/xml');
 	response.send(twiml.toString());
 })
