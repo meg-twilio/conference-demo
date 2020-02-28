@@ -3,7 +3,7 @@
 Steps to kick off your first Conference Call
 
 1. In terminal, run npm install 
-2. Purchase Phone Number on Twilio (in Twilio console or via REST API request) if you have yet to purchase Phone Number
+2. Purchase a Voice Enabled Phone Number on Twilio (in Twilio console or via REST API request) if you have yet to purchase Phone Number
 
 ### If configuring Conference Call in Twilio Console: 
 3. On Phone Number's page, update Voice Configuration for 'A Call Comes In' field to 'Webhook' updating the Webhook field to your public URL (recommend ngrok for tunneling to localhost if URL is not hosted). 
